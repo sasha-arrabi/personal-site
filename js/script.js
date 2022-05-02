@@ -24,14 +24,22 @@ function setupScrollPositionObservers() {
 }
 
 function setupAboutTypewriter() {
-    const typed = new Typed('#typed', {
-        stringsElement: '#typed-strings',
-        smartBackspace: true,
-        startDelay: 0,
-        backDelay: 1250,
-        typeSpeed: 25,
-        backSpeed: 30
+    const observer = new IntersectionObserver((entries) => {
+        if (entries && entries.length > 0 && entries[0].isIntersecting) {
+            observer.disconnect();
+
+            const typed = new Typed('#typed', {
+                stringsElement: '#typed-strings',
+                smartBackspace: true,
+                startDelay: 0,
+                backDelay: 1250,
+                typeSpeed: 25,
+                backSpeed: 30
+            });
+        }
     });
+
+    observer.observe($('about'));
 }
 
 init();
