@@ -1,0 +1,167 @@
+/* Global settings */
+
+/* Global variables */
+html {
+    --accent: #ec4848;
+}
+
+body {
+    background-color: #f7f7f7;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+a, a:visited, a:hover {
+    color: var(--accent);
+}
+
+.subtitle {
+    font-weight: 300;
+}
+
+.accent {
+    color: var(--accent);
+}
+
+/* Anchor link readjustment */
+
+.anchor {
+    position: relative;
+    top: -110px;
+}
+
+/* Profile picture styling */
+
+.profile {
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Social media link styling */
+
+.social-media {
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-media > a > i {
+    font-size: 1.5rem;
+}
+
+/* Icon styling */
+
+i {
+    padding-right: 10px;
+    color: var(--accent);
+}
+
+/* Menu styling */
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    font-size: 1.2rem;
+    transition: background-color .6s ease, color .6s ease;
+}
+
+.menu:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--accent);
+}
+
+.menu > .menu-item {
+    cursor: pointer;
+    padding: 10px;
+    margin-top: -20px;
+    margin-bottom: -20px;
+    border-radius: 4px;
+}
+
+.menu > .menu-item:hover:after {
+    content: ' ';
+    display: block;
+    height: 2px;
+    margin-top: -2px;
+    background-color: var(--accent);
+}
+
+.menu-item * a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu-icon {
+    display: none;
+}
+
+/* Highlight the currently active element based on scroll position */
+body[data-scroll-position='about'] * .menu > .menu-item[data-menu='about'],
+body[data-scroll-position='skills'] * .menu > .menu-item[data-menu='skills'],
+body[data-scroll-position='experience'] * .menu > .menu-item[data-menu='experience'],
+body[data-scroll-position='blog'] * .menu > .menu-item[data-menu='blog'],
+body[data-scroll-position='contact'] * .menu > .menu-item[data-menu='contact'] {
+    background-color: var(--accent);
+    color: #FFF;
+}
+
+/* Section styling */
+
+.section {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 4px;
+}
+
+/* Typed.js cursor styling */
+.typed-cursor {
+    font-size: 2.5rem;
+}
+
+/* Responsive handling */
+
+/* Mobile view */
+@media (max-width: 576px) {
+    .section {
+        padding: 30px;
+    }
+}
+
+/* Tablet view and under */
+@media (max-width: 768px) {
+    .menu {
+        column-gap: initial;
+        justify-content: space-around;
+    }
+
+    /* Disable active highlight */
+    body[data-scroll-position='about'] * .menu > .menu-item[data-menu='about'],
+    body[data-scroll-position='skills'] * .menu > .menu-item[data-menu='skills'],
+    body[data-scroll-position='experience'] * .menu > .menu-item[data-menu='experience'],
+    body[data-scroll-position='blog'] * .menu > .menu-item[data-menu='blog'],
+    body[data-scroll-position='contact'] * .menu > .menu-item[data-menu='contact'] {
+        background-color: inherit;
+        color: inherit;
+    }
+
+    .menu > .menu-item:hover:after {
+        content: initial;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .anchor {
+        top: -69px;
+    }
+}

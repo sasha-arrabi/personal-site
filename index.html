@@ -1,100 +1,159 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
+    <title>Sasha Arrabi</title>
+    <!-- Meta tags -->
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>#BlackLivesMatter</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAABILAAASCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMUAAAD/AAAA/wAAAPgAAAD/AAAA/wAAAE0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACfAAAA/wAAAP8AAADHAAAA/wAAAP8AAABNAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeQAAAP8AAAD/AAAAmQAAAPYAAAD/AAAATQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFMAAAD/AAAA9QAAAHYAAACqAAAA/wAAAE4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABJAAAA/wAAAP4AAAD/AAAA/wAAAP8AAAChAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKAAAA1gAAAP8AAAD/AAAA3QAAAOcAAAD/AAAA+wAAACQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkwAAAP8AAAD/AAAA/wAAAIkAAAC3AAAA/gAAAPgAAACdAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARgAAAP0AAAD/AAAA/wAAAPMAAAAbAAAAWwAAAE8AAABpAAAA6wAAABkAAAAAAAAAAAAAAAAAAAAAAAAAEwAAAOQAAAD/AAAA/wAAAPsAAABWAAAAAAAAAAkAAACZAAAA9QAAAIwAAAAzAAAAAAAAAAAAAAAAAAAAAAAAAJgAAAD/AAAA/wAAANUAAABBAAAAAAAAABMAAADNAAAAtQAAANkAAAD6AAAAYQAAAAAAAAAAAAAAAAAAAAAAAABmAAAA/wAAAP8AAACnAAAASwAAAFkAAAAlAAAA6gAAAP8AAACoAAAA5QAAAHIAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAMAAAAD/AAAA/wAAAP8AAAD/AAAAmgAAAJkAAAD+AAAA/wAAAHcAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAmAAAA9gAAAP8AAADjAAAAlAAAAL8AAADmAAAApAAAAOYAAAAoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGEAAACZAAAAuAAAAKEAAAD0AAAA/wAAAJ4AAAAVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWAAAAP8AAAD5AAAAnQAAALUAAAAfAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAADDAAAArAAAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+A8AAPgPAAD4DwAA+A8AAPgPAADwBwAA8AcAAOADAADAgwAAwAMAAMADAADAAwAA4AcAAPAPAAD4HwAA+D8AAA==" rel="icon" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
-    <style>
-        /* Reset the CSS styles that browsers preset */
-        html, body, div, div, applet, object, iframe,
-        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-        a, abbr, acronym, address, big, cite, code,
-        del, dfn, em, img, ins, kbd, q, s, samp,
-        small, strike, strong, sub, sup, tt, var,
-        b, u, i, center,
-        dl, dt, dd, ol, ul, li,
-        fieldset, form, label, legend,
-        table, caption, tbody, tfoot, thead, tr, th, td,
-        article, aside, canvas, details, embed, 
-        figure, figcaption, footer, header, hgroup, 
-        menu, nav, output, ruby, section, summary,
-        time, mark, audio, video {
-            margin: 0;
-            padding: 0;
-            border: 0;
-            font-size: 100%;
-            font: inherit;
-            vertical-align: baseline;
-        }
-        /* HTML5 display-role reset for older browsers */
-        article, aside, details, figcaption, figure, 
-        footer, header, hgroup, menu, nav, section {
-            display: block;
-        }
-
-        body {
-            line-height: 1;
-        }
-
-        ol, ul {
-            list-style: none;
-        }
-
-        blockquote, q {
-            quotes: none;
-        }
-
-        blockquote:before, blockquote:after,
-        q:before, q:after {
-            content: '';
-            content: none;
-        }
-
-        table {
-            border-collapse: collapse;
-            border-spacing: 0;
-        }
-
-        /* End of reset */
-
-        body {
-            background: #000;
-            color: #FFF;
-            min-height: 100%;
-            font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-        }
-
-        h1 {
-            font-size: 12vw;
-        }
-
-        .center-screen {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: left;
-            min-height: 100vh;
-        }
-
-        .invert {
-            background-color: #FFF;
-            color: #000;
-        }
-
-        .padding-bottom: {
-            .padding-bottom: 5px;
-        }
-    </style>
+    <!-- Favicon -->
+    <link href="" rel="icon" type="image/x-icon">
+    <!-- Preconnect to known resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://kit.fontawesome.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <!-- Load fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Font awesome icons -->
+    <script src="https://kit.fontawesome.com/23ae30dd29.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <!-- Tyyped.js-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- Custom styling -->
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- Custom scripts -->
+    <script type="module" src="js/script.js"></script>
 </head>
-<body>
-    <h1 class="center-screen">
-        <div>Black</div>
-        <div class="invert">Lives</div>
-        <div>Matter</div>
-    </h1>
+<body data-scroll-position="about">
+    <!-- Global container -->
+    <div id="global-container" class="container">
+        <div class="row">
+            <div class="col-12">
+                <br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <!-- Sidebar-->
+                <div id="sidebar" class="section shadow-sm sticky-top">
+                    <div class="text-center">
+                        <img class="img-fluid profile" src="media/profile.jpg" alt="Profile picture" width="200" height="200">
+                    </div>
+                    <br>
+                    <h2 class="text-center subtitle">Sasha Arrabi</h2>
+                    <div class="text-center accent">Consultant, Software Engineer</div>
+                    <div class="text-center">Nationwide</div>
+                    <hr>
+                    <div id="demographics">
+                        <div><i class="fa-solid fa-location-dot"></i> Columbus, OH, USA</div>
+                        <div><i class="fa-solid fa-globe"></i> English, Russian, French</div>
+                    </div>
+                    <hr>
+                    <div id="summary">
+                        <p><strong class="accent">About me</strong></p>
+                        <p>I am a full stack software engineering consultant working primarily with Angular, Java, and Node.js.</p>
+                    </div>
+                    <div>
+                        <p><strong class="accent">Current occupation</strong></p>
+                        <p>I am currently a <span class="accent">Tech Lead</span> for the Pre-Sale and New Business product within Nationwide Financial Digital.</p>
+                        <p>I lead project design, <span class="accent">architecture</span>, and implementation on several DevOps build lines, as well as provide consulting expertise throughout the NF Digital department.</p>
+                    </div>
+                    <br>
+                    <div id="social-media" class="social-media">
+                        <a href="https://twitter.com/sasha_arrabi" target="_blank" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/alexanderarrabi/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://blog.sashaarrabi.com" target="_blank" title="Blog"><i class="fa-solid fa-square-rss"></i></a>
+                        <a href="#contact"><i class="fa-solid fa-at" title="Contact form"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col gx-5">
+                <!-- Menu -->
+                <div id="menu" class="row sticky-top mb-4">
+                    <div class="menu section shadow-sm">
+                        <span class="menu-item" data-menu="about">
+                            <span class="d-none d-md-block"><a href="#about">About</a></span>
+                            <a class="menu-icon" href="#sidebar" title="About"><i class="fa-solid fa-address-card"></i></a>
+                        </span>
+                        <span class="menu-item" data-menu="skills">
+                            <span class="d-none d-md-block"><a href="#skills">Skills</a></span>
+                            <a class="menu-icon" href="#skills" title="Skills"><i class="fa-solid fa-screwdriver-wrench"></i></a>
+                        </span>
+                        <span class="menu-item" data-menu="experience">
+                            <span class="d-none d-md-block"><a href="#experience">Experience</a></span>
+                            <a class="menu-icon" href="#experience" title="Experience"><i class="fa-solid fa-briefcase"></i></a>
+                        </span>
+                        <span class="menu-item" data-menu="blog">
+                            <span class="d-none d-md-block"><a href="#blog">Blog</a></span>
+                            <a class="menu-icon" href="#blog" title="Blog"><i class="fa-solid fa-rss"></i></a>
+                        </span>
+                        <span class="menu-item" data-menu="contact">
+                            <span class="d-none d-md-block"><a href="#contact">Contact</a></span>
+                            <a class="menu-icon" href="#contact" title="Contact form"><i class="fa-solid fa-envelope"></i></a>
+                        </span>
+                    </div>
+                </div>
+                <!-- Content -->
+                <div id="about" class="anchor"></div>
+                <div class="row mb-4">
+                    <div class="section shadow-sm">
+                        <h1 class="display-2"><strong>Hello!</strong></h1>
+                        <h2 class="display-4">My name is Sasha.</h2>
+                        <br>
+                        <h2 id="typed" class="display-6" style="display: inline-block">I am a <span class="accent">coder</span></h2>
+                        <div id="typed-strings" class="d-none">
+                            <p></p>
+                            <p>I am a <span class="accent">coder</span></p>
+                            <p>I am a <span class="accent">father</span></p>
+                            <p>I am a <span class="accent">foodie</span></p>
+                            <p>I am a <span class="accent">gamer</span></p>
+                            <p>I am an avid <span class="accent">reader</span></p>
+                            <p>I am <span class="accent">fun-loving</span></p>
+                            <p>I am an <span class="accent">active listener</span></p>
+                            <p>I am <span class="accent">present</span></p>
+                            <p>I am a <span class="accent">humanist</span></p>
+                            <p>I am a <span class="accent">potential friend</span>^500</p>
+                            <p>I am glad to meet <span class="accent">you</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="skills" class="anchor"></div>
+                <div class="row mb-4">
+                    <div class="section shadow-sm">
+                        <h2><i class="fa-solid fa-screwdriver-wrench"></i> Skills</h2>
+                        <br>
+                        Coming soon!
+                    </div>
+                </div>
+                <div id="experience" class="anchor"></div>
+                <div class="row mb-4">
+                    <div class="section shadow-sm">
+                        <h2><i class="fa-solid fa-briefcase"></i> Experience</h2>
+                        <br>
+                        Coming soon!
+                    </div>
+                </div>
+                <div id="blog" class="anchor"></div>
+                <div class="row mb-4">
+                    <div class="section shadow-sm">
+                        <h2><i class="fa-solid fa-rss"></i> Blog</h2>
+                        <br>
+                        Coming soon!
+                    </div>
+                </div>
+                <div id="contact" class="anchor"></div>
+                <div class="row mb-4">
+                    <div class="section shadow-sm">
+                        <h2><i class="fa-solid fa-envelope"></i> Contact</h2>
+                        <br>
+                        Coming soon!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
