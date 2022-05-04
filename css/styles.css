@@ -3,6 +3,11 @@
 /* Global variables */
 html {
     --accent: #ec4848;
+    --blue: #2D7F9D;
+    --purple: #77628E;
+    --green: #129A7D;
+    --yellow: #E4CA99;
+    --grey: #d0d0d0;
 }
 
 body {
@@ -24,6 +29,26 @@ a, a:visited, a:hover {
 
 .accent {
     color: var(--accent);
+}
+
+.green {
+    color: var(--green);
+}
+
+.blue {
+    color: var(--blue);
+}
+
+.purple {
+    color: var(--purple);
+}
+
+.black {
+    color: #000;
+}
+
+.yellow {
+    color: var(--yellow);
 }
 
 /* Anchor link readjustment */
@@ -122,7 +147,164 @@ body[data-scroll-position='contact'] * .menu > .menu-item[data-menu='contact'] {
     border-radius: 4px;
 }
 
+/* Skill bar styling */
+
+.skill-bar {
+    display: block;
+    position: relative;
+    width: 80%;
+    left: 10%;
+}
+
+.skill-bar>.skill {
+    display: inline-block;
+    position: relative;
+}
+
+.skill-bar>.skill:not(:last-of-type) {
+    width: 25%;
+    height: 3px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: -5px;
+    background-color: var(--grey);
+}
+
+.skill-bar>.skill:last-of-type {
+    width: 0px;
+}
+
+.skill-bar>.skill:not(:last-of-type):after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-top: -8px;
+    margin-left: -10px;
+    border-radius: 50%;
+    background-color: var(--grey);
+}
+
+.skill-bar>.skill:last-of-type:after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-left: -10px;
+    margin-top: -26px;
+    border-radius: 50%;
+    background-color: var(--grey);
+}
+
+/* Rank 1 */
+.skill-bar.rank-1>.skill:nth-child(1):after {
+    background-color: var(--accent);
+}
+.skill-bar.rank-1>.skill:nth-child(1):before {
+    content: "Noob";
+    position: absolute;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    top: 15px;
+}
+
+/* Rank 2 */
+.skill-bar.rank-2>.skill:nth-child(-n+2):after,
+.skill-bar.rank-2>.skill:nth-child(1) {
+    background-color: var(--yellow);
+}
+.skill-bar.rank-2>.skill:nth-child(2):before {
+    content: "Learning";
+    position: absolute;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    top: 15px;
+}
+
+/* Rank 3 */
+.skill-bar.rank-3>.skill:nth-child(-n+3):after,
+.skill-bar.rank-3>.skill:nth-child(-n+2) {
+    background-color: var(--green);
+}
+.skill-bar.rank-3>.skill:nth-child(3):before {
+    content: "Intermediate";
+    position: absolute;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    top: 15px;
+}
+
+/* Rank 4 */
+.skill-bar.rank-4>.skill:nth-child(-n+4):after,
+.skill-bar.rank-4>.skill:nth-child(-n+3) {
+    background-color: var(--blue);
+}
+.skill-bar.rank-4>.skill:nth-child(4):before {
+    content: "Advanced";
+    position: absolute;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    top: 15px;
+}
+
+/* Rank 5 */
+.skill-bar.rank-5>.skill:nth-child(-n+5):after,
+.skill-bar.rank-5>.skill:nth-child(-n+4) {
+    background-color: var(--purple);
+}
+.skill-bar.rank-5>.skill:nth-child(5):before {
+    content: "Expert";
+    position: absolute;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    top: 0px;
+}
+
+/* Work history styling */
+
+.work-history {
+    position: relative;
+    width: calc(100% - 30px);
+    margin-left: 30px;
+}
+
+.work-history:before {
+    display: block;
+    position: absolute;
+    content: " ";
+    height: 100%;
+    width: 3px;
+    margin-left: -30px;
+    background-color: var(--grey);
+}
+
+.work-history>.job:before {
+    display: block;
+    position: absolute;
+    content: " ";
+    height: 27px;
+    width: 27px;
+    border-radius: 50%;
+    margin-left: -42px;
+    margin-top: -3px;
+    border: 3px solid var(--green);
+    background-color: #FFF;
+}
+
+.work-history>.job:after {
+    display: block;
+    position: absolute;
+    content: " ";
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    margin-left: -35px;
+    margin-top: -20px;
+    background-color: var(--green);
+}
+
 /* Typed.js cursor styling */
+
 .typed-cursor {
     font-size: 2.5rem;
 }

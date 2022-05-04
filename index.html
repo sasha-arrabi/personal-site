@@ -27,7 +27,7 @@
     <!-- Custom scripts -->
     <script type="module" src="js/script.js"></script>
 </head>
-<body data-scroll-position="about">
+<body id="home" data-scroll-position="about">
     <!-- Global container -->
     <div id="global-container" class="container">
         <div class="row">
@@ -40,7 +40,7 @@
                 <!-- Sidebar-->
                 <div id="sidebar" class="section shadow-sm sticky-top">
                     <div class="text-center">
-                        <img class="img-fluid profile" src="media/profile.jpg" alt="Profile picture" width="200" height="200">
+                        <a href="#home"><img class="img-fluid profile" src="media/profile.jpg" alt="Profile picture" width="200" height="200"></a>
                     </div>
                     <br>
                     <h2 class="text-center subtitle">Sasha Arrabi</h2>
@@ -48,12 +48,12 @@
                     <div class="text-center">Nationwide</div>
                     <hr>
                     <div id="demographics">
-                        <div><i class="fa-solid fa-location-dot"></i> Columbus, OH, USA</div>
-                        <div><i class="fa-solid fa-globe"></i> English, Russian, French</div>
+                        <div><i class="fa-solid fa-location-dot black"></i> Columbus, OH, USA</div>
+                        <div><i class="fa-solid fa-globe green"></i> English, Russian, French</div>
                     </div>
                     <hr>
                     <div id="summary">
-                        <p><strong class="accent">About me</strong></p>
+                        <p><strong class="accent">Professional summary</strong></p>
                         <p>I am a full stack software engineering consultant working primarily with Angular, Java, and Node.js.</p>
                     </div>
                     <div>
@@ -63,10 +63,10 @@
                     </div>
                     <br>
                     <div id="social-media" class="social-media">
-                        <a href="https://twitter.com/sasha_arrabi" target="_blank" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="https://www.linkedin.com/in/alexanderarrabi/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://blog.sashaarrabi.com" target="_blank" title="Blog"><i class="fa-solid fa-square-rss"></i></a>
-                        <a href="#contact"><i class="fa-solid fa-at" title="Contact form"></i></a>
+                        <a href="https://twitter.com/sasha_arrabi" target="_blank" title="Twitter"><i class="fa-brands fa-twitter" style="color: #1DA1F2"></i></a>
+                        <a href="https://www.linkedin.com/in/alexanderarrabi/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin" style="color: #0077B5"></i></a>
+                        <a href="https://blog.sashaarrabi.com" target="_blank" title="Blog"><i class="fa-solid fa-square-rss" style="color: #f26522"></i></a>
+                        <a href="#contact"><i class="fa-solid fa-at purple" title="Contact form"></i></a>
                     </div>
                 </div>
             </div>
@@ -76,7 +76,7 @@
                     <div class="menu section shadow-sm">
                         <span class="menu-item" data-menu="about">
                             <span class="d-none d-md-block"><a href="#about">About</a></span>
-                            <a class="menu-icon" href="#sidebar" title="About"><i class="fa-solid fa-address-card"></i></a>
+                            <a class="menu-icon" href="#about" title="About"><i class="fa-solid fa-address-card"></i></a>
                         </span>
                         <span class="menu-item" data-menu="skills">
                             <span class="d-none d-md-block"><a href="#skills">Skills</a></span>
@@ -97,26 +97,68 @@
                     </div>
                 </div>
                 <!-- Content -->
-                <div id="about" class="anchor"></div>
                 <div class="row mb-4">
                     <div class="section shadow-sm">
                         <h1 class="display-2"><strong>Hello!</strong></h1>
                         <h2 class="display-4">My name is Sasha.</h2>
                         <br>
-                        <h2 id="typed" class="display-6" style="display: inline-block">I am a <span class="accent">coder</span></h2>
+                        <h2 id="typed" class="display-6 d-inline-block">I am a <span class="accent">coder</span></h2>
                         <div id="typed-strings" class="d-none">
                             <p></p>
                             <p>I am a <span class="accent">coder</span></p>
                             <p>I am a <span class="accent">father</span></p>
                             <p>I am a <span class="accent">foodie</span></p>
                             <p>I am a <span class="accent">gamer</span></p>
+                            <p>I am a <span class="accent">traveler</span></p>
                             <p>I am an avid <span class="accent">reader</span></p>
-                            <p>I am <span class="accent">fun-loving</span></p>
                             <p>I am an <span class="accent">active listener</span></p>
                             <p>I am <span class="accent">present</span></p>
-                            <p>I am a <span class="accent">humanist</span></p>
-                            <p>I am a <span class="accent">potential friend</span>^500</p>
                             <p>I am glad to meet <span class="accent">you</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="about" class="anchor"></div>
+                <div class="row mb-4">
+                    <div class="section shadow-sm">
+                        <h2><i class="fa-solid fa-address-card"></i> About me</h2>
+                        <br>
+                        <h4>Hobbies</h4>
+                        <div class="row">
+                            <div class="col-md-4"><i class="green fa-solid fa-gamepad"></i> Gaming</div>
+                            <div class="col-md-4"><i class="green fa-solid fa-person-hiking"></i> Hiking</div>
+                            <div class="col-md-4"><i class="green fa-solid fa-plane-departure"></i> Visiting new places</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"><i class="green fa-solid fa-kitchen-set"></i> Cooking new dishes</div>
+                            <div class="col-md-4"><i class="green fa-solid fa-film"></i> Movie buff</div>
+                            <div class="col-md-4"><i class="green fa-solid fa-utensils"></i> Food tours</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"><i class="green fa-solid fa-book"></i> Reading</div>
+                        </div>
+                        <br><br>
+                        <h4>Current focuses</h4>
+                        <div class="row">
+                            <div class="col-md-4"><i class="blue fa-solid fa-people-roof"></i> Fatherhood</div>
+                            <div class="col-md-4"><i class="blue fa-solid fa-dumbbell"></i> Health & exercise</div>
+                            <div class="col-md-4"><i class="blue fa-solid fa-brain"></i> Mindfulness</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"><i class="blue fa-solid fa-person-chalkboard"></i> Mentoring</div>
+                            <div class="col-md-4"><i class="blue fa-solid fa-cloud"></i> Cloud computing</div>
+                            <div class="col-md-4"><i class="blue fa-solid fa-robot"></i> AI</div>
+                        </div>
+                        <br><br>
+                        <h4>Aspirations</h4>
+                        <div class="row">
+                            <div class="col-md-4"><i class="purple fa-solid fa-person-running"></i> Parkour</div>
+                            <div class="col-md-4"><i class="purple fa-solid fa-car-burst"></i> Stunt driving</div>
+                            <div class="col-md-4"><i class="purple fa-solid fa-earth-americas"></i> Learn Spanish</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"><i class="purple fa-solid fa-people-group"></i> Modern dance</div>
+                            <div class="col-md-4"><i class="purple fa-solid fa-masks-theater"></i> Improv</div>
+                            <div class="col-md-4"><i class="purple fa-solid fa-code"></i> Game development</div>
                         </div>
                     </div>
                 </div>
@@ -125,7 +167,234 @@
                     <div class="section shadow-sm">
                         <h2><i class="fa-solid fa-screwdriver-wrench"></i> Skills</h2>
                         <br>
-                        Coming soon!
+                        <h4>Languages</h4>
+                        <br>
+                        <div class="row gx-5">
+                            <div class="col-md-6">
+                                <div class="text-center"><strong>TypeScript / JavaScript</strong><i class="black ms-2 fa-brands fa-js"></i></div>
+                                <div class="skill-bar rank-5">
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                </div>
+                                <br>
+                                <br>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="text-center"><strong>Java</strong><i class="black ms-2 fa-brands fa-java"></i></div>
+                                <div class="skill-bar rank-4">
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                </div>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="row gx-5">
+                            <div class="col-md-6">
+                                <div class="text-center"><strong>SQL</strong><i class="black ms-2 fa-solid fa-database"></i></div>
+                                <div class="skill-bar rank-3">
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                </div>
+                                <br>
+                                <br>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="text-center"><strong>Python</strong><i class="black fa-brands ms-2 fa-python"></i></div>
+                                <div class="skill-bar rank-2">
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                </div>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="row gx-5">
+                            <div class="col-md-6">
+                                <div class="text-center"><strong>Bash</strong><i class="black ms-2 fa-brands fa-ubuntu"></i></div>
+                                <div class="skill-bar rank-3">
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                </div>
+                                <br>
+                                <br>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="text-center"><strong>C++</strong></div>
+                                <div class="skill-bar rank-1">
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                </div>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                        <h4>Frameworks</h4>
+                        <br>
+                        <div class="row gx-5">
+                            <div class="col-md-6">
+                                <div class="text-center"><strong>Angular</strong><i class="black ms-2 fa-brands fa-angular"></i></div>
+                                <div class="skill-bar rank-5">
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                </div>
+                                <br>
+                                <br>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="text-center"><strong>Spring</strong><i class="black ms-2 fa-solid fa-leaf"></i></div>
+                                <div class="skill-bar rank-4">
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                </div>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="row gx-5">
+                            <div class="col-md-6">
+                                <div class="text-center"><strong>Struts</strong></div>
+                                <div class="skill-bar rank-3">
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                </div>
+                                <br>
+                                <br>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="text-center"><strong>JQuery</strong></div>
+                                <div class="skill-bar rank-3">
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                </div>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="row gx-5">
+                            <div class="col-md-6">
+                                <div class="text-center"><strong>AWS</strong><i class="black ms-2 fa-brands fa-aws"></i></div>
+                                <div class="skill-bar rank-2">
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                </div>
+                                <br>
+                                <br>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="text-center"><strong>Apigee</strong></div>
+                                <div class="skill-bar rank-4">
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                </div>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                        <h4>Tools</h4>
+                        <br>
+                        <div class="row gx-5">
+                            <div class="col-md-6">
+                                <div class="text-center"><strong>Git</strong><i class="black ms-2 fa-brands fa-git-alt"></i></div>
+                                <div class="skill-bar rank-4">
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                </div>
+                                <br>
+                                <br>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="text-center"><strong>Eclipse</strong></div>
+                                <div class="skill-bar rank-4">
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                </div>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="row gx-5">
+                            <div class="col-md-6">
+                                <div class="text-center"><strong>VSCode</strong><i class="black ms-2 fa-brands fa-windows"></i></div>
+                                <div class="skill-bar rank-4">
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                </div>
+                                <br>
+                                <br>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="text-center"><strong>Jira</strong><i class="black ms-2 fa-brands fa-jira"></i></div>
+                                <div class="skill-bar rank-3">
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                </div>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="row gx-5">
+                            <div class="col-md-6">
+                                <div class="text-center"><strong>GitHub</strong><i class="black ms-2 fa-brands fa-github"></i></div>
+                                <div class="skill-bar rank-5">
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                    <div class="skill"></div>
+                                </div>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div id="experience" class="anchor"></div>
@@ -133,7 +402,23 @@
                     <div class="section shadow-sm">
                         <h2><i class="fa-solid fa-briefcase"></i> Experience</h2>
                         <br>
-                        Coming soon!
+                        <div class="work-history">
+                            <div class="job green"><strong>Consultant, Software Engineering</strong></div>
+                            <div class="d-flex">
+                                <span>at <a href="https://nationwide.com" target="_blank">Nationwide</a></span>
+                                <span class="ms-auto"><strong>Aug 2020 - Present</strong></span>
+                            </div>
+                            <br>
+                            <p>Tech Lead for the Pre-Sale and New Business product within Nationwide Financial Digital, leading full stack project design, architecture, and implementation on several Agile / DevOps build lines, as well as providing consulting expertise throughout the NF Digital department.</p>
+                            <ul>
+                                <li>Leading the Break the Monolith effort to redesign enterprise-sized monolithic web apps into a modern web (SPA / microfrontend) architecture.</li>
+                                <li>Substantially improved the startup and runtime performance of the nationwidefinancial.com flagship web app, reducing average load time by 90% (from 15.4 seconds to 1.5 seconds) and bundle file size by 88%.</li>
+                                <li>Led, designed, and completed the migration and redesign of a large enterprise web app comprising over 300K lines of code from using the AngularJS framework to using the latest version of Angular.</li>
+                                <li>Designed and implemented microservice REST APIs performing complex, cross-domain orchestration across multiple technology domains including Spring Boot, Node.js, Apigee, and Kubernetes.</li>
+                                <li>Developed a Concourse CI pipeline that reduced average application build time from 12 minutes to 5 minutes and significantly reduced mean time to recovery (MTTR) from 20 minutes to 2 minutes, allowing for more frequent production deployments with smaller risk.</li>
+                                <li>Lead enterprise-wide training courses and created training material for functional style coding and Jasmine and Jest unit testing.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div id="blog" class="anchor"></div>

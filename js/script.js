@@ -32,7 +32,7 @@ function setupAboutTypewriter() {
                 stringsElement: '#typed-strings',
                 smartBackspace: true,
                 startDelay: 0,
-                backDelay: 1250,
+                backDelay: 1000,
                 typeSpeed: 25,
                 backSpeed: 30
             });
