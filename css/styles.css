@@ -4,6 +4,7 @@
 html {
     --accent: #ec4848;
     --accent-light: #ff8080;
+    --accent-dark: #cb3a3a;
     --blue: #2D7F9D;
     --purple: #77628E;
     --green: #129A7D;
@@ -28,9 +29,27 @@ a, a:visited, a:hover {
     font-weight: 300;
 }
 
+.form-control:focus, .btn:focus, .btn:focus:active {
+    border-color: var(--accent-light);
+    box-shadow: 0 0 0 0.25rem var(--accent-light);
+}
+
 .accent {
     color: var(--accent);
 }
+
+.accent-bg {
+    border-color: var(--accent);
+    background-color: var(--accent);
+    color: #fff;
+}
+
+.accent-bg:hover, .accent-bg:focus, .accent-bg:active {
+    background-color: var(--accent-dark);
+    border-color: var(--accent-dark);
+}
+
+.accent-bg:
 
 .green {
     color: var(--green);
@@ -134,7 +153,6 @@ i {
 body[data-scroll-position='about'] * .menu > .menu-item[data-menu='about'],
 body[data-scroll-position='skills'] * .menu > .menu-item[data-menu='skills'],
 body[data-scroll-position='experience'] * .menu > .menu-item[data-menu='experience'],
-body[data-scroll-position='blog'] * .menu > .menu-item[data-menu='blog'],
 body[data-scroll-position='contact'] * .menu > .menu-item[data-menu='contact'] {
     background-color: var(--accent);
     color: #FFF;
@@ -391,7 +409,6 @@ body[data-scroll-position='contact'] * .menu > .menu-item[data-menu='contact'] {
     body[data-scroll-position='about'] * .menu > .menu-item[data-menu='about'],
     body[data-scroll-position='skills'] * .menu > .menu-item[data-menu='skills'],
     body[data-scroll-position='experience'] * .menu > .menu-item[data-menu='experience'],
-    body[data-scroll-position='blog'] * .menu > .menu-item[data-menu='blog'],
     body[data-scroll-position='contact'] * .menu > .menu-item[data-menu='contact'] {
         background-color: inherit;
         color: inherit;

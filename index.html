@@ -95,13 +95,13 @@
                             <span class="d-none d-md-block"><a href="#experience">Experience</a></span>
                             <a class="menu-icon" href="#experience" title="Experience"><i class="fa-solid fa-briefcase"></i></a>
                         </span>
-                        <span class="menu-item" data-menu="blog">
-                            <span class="d-none d-md-block"><a href="#blog">Blog</a></span>
-                            <a class="menu-icon" href="#blog" title="Blog"><i class="fa-solid fa-rss"></i></a>
-                        </span>
                         <span class="menu-item" data-menu="contact">
                             <span class="d-none d-md-block"><a href="#contact">Contact</a></span>
                             <a class="menu-icon" href="#contact" title="Contact form"><i class="fa-solid fa-envelope"></i></a>
+                        </span>
+                        <span class="menu-item" data-menu="blog">
+                            <span class="d-none d-md-block"><a href="https://blog.sashaarrabi.com">Blog</a></span>
+                            <a class="menu-icon" href="https://blog.sashaarrabi.com" title="Blog"><i class="fa-solid fa-rss"></i></a>
                         </span>
                     </div>
                 </div>
@@ -524,20 +524,39 @@
                         </div>
                     </div>
                 </div>
-                <div id="blog" class="anchor"></div>
-                <div class="row mb-4">
-                    <div class="section shadow-sm">
-                        <h2><i class="fa-solid fa-rss"></i> Blog</h2>
-                        <br>
-                        Coming soon!
-                    </div>
-                </div>
                 <div id="contact" class="anchor"></div>
                 <div class="row mb-4">
                     <div class="section shadow-sm">
                         <h2><i class="fa-solid fa-envelope"></i> Contact</h2>
                         <br>
-                        Coming soon!
+                        <div id="contactFormContainer">
+                            <p>Fill out and submit the following contact form and I'll get in touch as soon as I can!</p>
+                            <form id="contactForm" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScfII1_3WdYy9eGWvET1DHcPq8cAlf_u81xHcpYsusfDOBqaw/formResponse?embedded=true" target="hidden-contact-result" method="POST">
+                                <div class="mb-3">
+                                    <label for="nameInput" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="nameInput" name="entry.2005620554" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="emailInput" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" name="entry.1045781291" required>
+                                    <div id="emailHelp" class="form-text">Providing an email allows me to respond to your message.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="phoneInput" class="form-label">Phone <em>(optional)</em></label>
+                                    <input type="text" class="form-control" id="nameInput" name="entry.2005620554" placeholder="(123) 456-7890" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="messageInput" class="form-label">Message</label>
+                                    <textarea id="messageInput" rows="5" class="form-control" name="entry.839337160" required></textarea>
+                                </div>
+                                <input type="submit" value="Get in touch" class="btn btn-primary accent-bg">
+                            </form>
+                            <iframe id="contactResult" name="hidden-contact-result" class="d-none"></iframe>
+                        </div>
+                        <div id="contactFormSubmitted" style="display: none">
+                            <h4>Thank you!</h4>
+                            <p>I'll reach out to you shortly.</p>
+                        </div>
                     </div>
                 </div>
             </div>

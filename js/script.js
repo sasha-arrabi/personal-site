@@ -7,10 +7,11 @@ function $(id) {
 function init() {
     setupScrollPositionObservers();
     setupAboutTypewriter();
+    setupContactFormListeners();
 }
 
 function setupScrollPositionObservers() {
-    const menus = [ 'about', 'skills', 'experience', 'blog', 'contact' ];
+    const menus = [ 'about', 'skills', 'experience', 'contact' ];
     const comparators = menus.map((menuItem) => () => {
         const element = $(menuItem);
 
@@ -40,6 +41,18 @@ function setupAboutTypewriter() {
     });
 
     observer.observe($('about'));
+}
+
+function setupContactFormListeners() {
+    $('contactForm').addEventListener('submit', () => {
+        $('contactFormContainer').style.display = 'none';
+        $('contactFormSubmitted').style.display = 'block';
+    });
+    
+    const contactResult = $('contactResult');
+    contactResult.addEventListener('load', () => {
+        contactResult.parentNode.removeChild(contactResult);
+    });
 }
 
 init();
