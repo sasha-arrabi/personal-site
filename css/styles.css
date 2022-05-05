@@ -3,6 +3,7 @@
 /* Global variables */
 html {
     --accent: #ec4848;
+    --accent-light: #ff8080;
     --blue: #2D7F9D;
     --purple: #77628E;
     --green: #129A7D;
@@ -20,7 +21,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a, a:visited, a:hover {
-    color: var(--accent);
+    color: var(--blue);
 }
 
 .subtitle {
@@ -262,6 +263,35 @@ body[data-scroll-position='contact'] * .menu > .menu-item[data-menu='contact'] {
 
 /* Work history styling */
 
+.experience {
+    max-height: 65vh;
+    overflow-y: auto;
+    margin-top: -20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.experience::-webkit-scrollbar {
+    width: 10px;
+}
+
+.experience::-webkit-scrollbar-track {
+    background-color: var(--grey);
+    border-radius: 5px;
+}
+
+.experience::-webkit-scrollbar-thumb {
+    background: var(--accent-light);
+    border-radius: 5px;
+}
+
+.experience::-webkit-scrollbar-thumb:hover {
+    background: var(--accent);
+}
+
 .work-history {
     position: relative;
     width: calc(100% - 30px);
@@ -291,6 +321,22 @@ body[data-scroll-position='contact'] * .menu > .menu-item[data-menu='contact'] {
     background-color: #FFF;
 }
 
+.work-history>.job.blue:before {
+    border-color: var(--blue);
+}
+
+.work-history>.job.accent:before {
+    border-color: var(--accent);
+}
+
+.work-history>.job.purple:before {
+    border-color: var(--purple);
+}
+
+.work-history>.job.green:before {
+    border-color: var(--green);
+}
+
 .work-history>.job:after {
     display: block;
     position: absolute;
@@ -300,6 +346,22 @@ body[data-scroll-position='contact'] * .menu > .menu-item[data-menu='contact'] {
     border-radius: 50%;
     margin-left: -35px;
     margin-top: -20px;
+    background-color: var(--green);
+}
+
+.work-history>.job.blue:after {
+    background-color: var(--blue);
+}
+
+.work-history>.job.accent:after {
+    background-color: var(--accent);
+}
+
+.work-history>.job.purple:after {
+    background-color: var(--purple);
+}
+
+.work-history>.job.green:after {
     background-color: var(--green);
 }
 
