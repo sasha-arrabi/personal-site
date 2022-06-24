@@ -442,13 +442,14 @@
                                     <span class="ms-auto"><strong>Aug 2020 - Present</strong></span>
                                 </div>
                                 <br>
-                                <p>Tech Lead for the Pre-Sale and New Business product within Nationwide Financial Digital, leading full stack project design, architecture, and implementation on several Agile / DevOps build lines, as well as providing consulting expertise throughout the NF Digital department.</p>
+                                <p>Tech Lead for the Pre-Sale and New Business product within Nationwide Financial Digital, leading full stack project design, architecture, and implementation on several Agile / DevOps build lines and providing consulting expertise throughout the NF Digital department.</p>
                                 <ul>
-                                    <li>Leading the Break the Monolith effort to redesign enterprise-sized monolithic web apps into a modern web (SPA / microfrontend) architecture.</li>
-                                    <li>Substantially improved the startup and runtime performance of the nationwidefinancial.com flagship web app, reducing average load time by 90% (from 15.4 seconds to 1.5 seconds) and bundle file size by 88%.</li>
-                                    <li>Led, designed, and completed the migration and redesign of a large enterprise web app comprising over 300K lines of code from using the AngularJS framework to using the latest version of Angular.</li>
-                                    <li>Designed and implemented microservice REST APIs performing complex, cross-domain orchestration across multiple technology domains including Spring Boot, Node.js, Apigee, and Kubernetes.</li>
-                                    <li>Developed a Concourse CI pipeline that reduced average application build time from 12 minutes to 5 minutes and significantly reduced mean time to recovery (MTTR) from 20 minutes to 2 minutes, allowing for more frequent production deployments with smaller risk.</li>
+                                    <li>Pioneering independent deployment of individual application features by leading the Break the Monolith effort to redesign enterprise-sized monolithic web apps into a modern web (SPA / microfrontend) architecture.</li>
+                                    <li>Increased customer engagement and conversion by substantially improving the startup and runtime performance of the nationwidefinancial.com flagship web app, reducing average load time by 90% (from 15.4 seconds to 1.5 seconds) and bundle file size by 88%.</li>
+                                    <li>Modernized and strengthened the enterprise tech stack by leading, designing, and completing the migration and redesign of a large enterprise web app comprising over 300K lines of code from using the AngularJS framework to using the latest version of Angular.</li>
+                                    <li>Demonstrated thorough practice and understanding of modern web architecture through designing and implementing microservice REST APIs performing complex, cross-domain orchestration across multiple technology domains including Spring Boot, Node.js, Apigee, and Kubernetes.</li>
+                                    <li>Increased frequency of production deployments and reduced overall risk by designing and implementing a Concourse CI pipeline that reduced average application build time from 12 minutes to 5 minutes and significantly reduced mean time to recovery (MTTR) from 20 minutes to 2 minutes.</li>
+                                    <li>Enhanced enterprise security by proactively finding and fixing OWASP security vulnerabilities and designing and implementing the migration of the OAuth 2.0 authentication system for a public-facing flagship web app, ensuring that all OpenID Connect specs were strictly followed.</li>
                                     <li>Lead enterprise-wide training courses and created training material for functional style coding and Jasmine and Jest unit testing.</li>
                                 </ul>
                                 <div class="job blue"><strong>Specialist, IT App Development</strong></div>
@@ -531,10 +532,14 @@
                         <br>
                         <div id="contactFormContainer">
                             <p>Fill out and submit the following contact form and I'll get in touch as soon as I can!</p>
-                            <form id="contactForm" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScfII1_3WdYy9eGWvET1DHcPq8cAlf_u81xHcpYsusfDOBqaw/formResponse?embedded=true" target="hidden-contact-result" method="POST">
+                            <form id="contactForm" target="hidden-contact-result" method="POST">
                                 <div class="mb-3">
                                     <label for="nameInput" class="form-label">Name</label>
                                     <input type="text" class="form-control" id="nameInput" name="entry.2005620554" required>
+                                </div>
+                                <div class="mb-3" hidden>
+                                    <label for="lastNameInput" class="form-label">Last Name</label>
+                                    <input type="text" class="form-control" id="lastNameInput" name="lastName">
                                 </div>
                                 <div class="mb-3">
                                     <label for="emailInput" class="form-label">Email</label>
@@ -543,11 +548,19 @@
                                 </div>
                                 <div class="mb-3">
                                     <label for="phoneInput" class="form-label">Phone <em>(optional)</em></label>
-                                    <input type="text" class="form-control" id="nameInput" name="entry.2005620554" placeholder="(123) 456-7890" required>
+                                    <input type="text" class="form-control" id="nameInput" name="entry.2005620554" placeholder="(123) 456-7890">
                                 </div>
                                 <div class="mb-3">
                                     <label for="messageInput" class="form-label">Message</label>
                                     <textarea id="messageInput" rows="5" class="form-control" name="entry.839337160" required></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="captchaInput" class="form-label"><span>Answer the following:</span>&nbsp;<span id="captchaFirstNumber"></span>&nbsp;<span id="captchaOperation"></span>&nbsp;<span id="captchaSecondNumber"></span><span> = ?</span></label>
+                                    <input type="text" class="form-control" id="captchaInput" name="captcha" placeholder="Answer" required>
+                                </div>
+                                <div class="form-check mb-3" hidden>
+                                    <input type="checkbox" class="form-check-input" id="robotCheck" name="robotCheck">
+                                    <label for="robotCheck" class="form-label-label">I am not a robot</label>
                                 </div>
                                 <input type="submit" value="Get in touch" class="btn btn-primary accent-bg">
                             </form>
