@@ -19,7 +19,7 @@
     <!-- Font awesome icons -->
     <script src="https://kit.fontawesome.com/23ae30dd29.js" crossorigin="anonymous"></script>
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" media="screen,print">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     <!-- Tyyped.js-->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
@@ -48,40 +48,43 @@
             <div class="col-lg-4 mb-4">
                 <!-- Sidebar-->
                 <div id="sidebar" class="section shadow-sm sticky-top">
-                    <div class="text-center">
+                    <div class="text-center portrait">
                         <a href="#home"><img class="img-fluid profile" src="media/profile.jpg" alt="Profile picture" width="200" height="200"></a>
                     </div>
-                    <br>
-                    <h2 class="text-center subtitle">Sasha Arrabi</h2>
-                    <div class="text-center accent">Consultant, Software Engineer</div>
-                    <div class="text-center">Nationwide</div>
-                    <hr>
-                    <div id="demographics">
-                        <div><i class="fa-solid fa-location-dot black"></i> Columbus, OH, USA</div>
-                        <div><i class="fa-solid fa-globe green"></i> English, Russian, French</div>
-                    </div>
-                    <hr>
-                    <div id="summary">
-                        <p><strong class="accent">Professional summary</strong></p>
-                        <p>I am a full stack software engineering consultant working primarily with Angular, Java, and Node.js.</p>
-                    </div>
-                    <div>
-                        <p><strong class="accent">Current occupation</strong></p>
-                        <p>I am currently a <span class="accent">Tech Lead</span> for the Pre-Sale and New Business product within Nationwide Financial Digital.</p>
-                        <p>I lead project design, <span class="accent">architecture</span>, and implementation on several DevOps build lines, as well as provide consulting expertise throughout the NF Digital department.</p>
-                    </div>
-                    <br>
-                    <div id="social-media" class="social-media">
-                        <a href="https://twitter.com/sasha_arrabi" target="_blank" title="Twitter"><i class="fa-brands fa-twitter" style="color: #1DA1F2"></i></a>
-                        <a href="https://www.linkedin.com/in/alexanderarrabi/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin" style="color: #0077B5"></i></a>
-                        <a href="https://blog.sashaarrabi.com" target="_blank" title="Blog"><i class="fa-solid fa-square-rss" style="color: #f26522"></i></a>
-                        <a href="#contact"><i class="fa-solid fa-at purple" title="Contact form"></i></a>
+                    <br class="no-print">
+                    <div class="profile-info">
+                        <h2 class="text-center subtitle">Sasha Arrabi</h2>
+                        <div class="text-center accent">Senior Consultant, Software Engineer</div>
+                        <div class="text-center">Nationwide Insurance</div>
+                        <hr class="no-print">
+                        <div id="demographics" class="no-print">
+                            <div><i class="fa-solid fa-location-dot black"></i> Columbus, OH, USA</div>
+                            <div><i class="fa-solid fa-globe green"></i> English, Russian, French</div>
+                        </div>
+                        <hr>
+                        <div id="summary">
+                            <p><strong class="accent">Professional summary</strong></p>
+                            <p>I am a senior full stack software engineering consultant working primarily with Node.js, Angular, and Java microservices.</p>
+                        </div>
+                        <div>
+                            <br class="print-only">
+                            <p class="no-print"><strong class="accent">Current occupation</strong></p>
+                            <p>I am currently a <span class="accent">Senior Tech Lead</span> for the Claims Shared Services organization within Nationwide Property & Casualty (P&C).</p>
+                            <p>My role operates on both a <span class="accent">tactical</span> and <span class="accent">strategic level</span> to coordinate overall department technical solutions, resiliency, and direction.</p>
+                        </div>
+                        <br>
+                        <div id="social-media" class="social-media no-print">
+                            <a href="https://twitter.com/sasha_arrabi" target="_blank" title="Twitter"><i class="fa-brands fa-twitter" style="color: #1DA1F2"></i></a>
+                            <a href="https://www.linkedin.com/in/alexanderarrabi/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin" style="color: #0077B5"></i></a>
+                            <a href="https://blog.sashaarrabi.com" target="_blank" title="Blog"><i class="fa-solid fa-square-rss" style="color: #f26522"></i></a>
+                            <a href="#contact"><i class="fa-solid fa-at purple" title="Contact form"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col gx-5">
                 <!-- Menu -->
-                <div id="menu" class="row sticky-top mb-4">
+                <div id="menu" class="row sticky-top mb-4 no-print">
                     <div class="menu section shadow-sm">
                         <span class="menu-item" data-menu="about">
                             <span class="d-none d-md-block"><a href="#about">About</a></span>
@@ -106,7 +109,7 @@
                     </div>
                 </div>
                 <!-- Content -->
-                <div class="row mb-4">
+                <div class="row mb-4 no-print">
                     <div class="section shadow-sm">
                         <h1 class="display-2"><strong>Hello!</strong></h1>
                         <h2 class="display-4">My name is Sasha.</h2>
@@ -127,7 +130,7 @@
                     </div>
                 </div>
                 <div id="about" class="anchor"></div>
-                <div class="row mb-4">
+                <div class="row mb-4 no-print">
                     <div class="section shadow-sm">
                         <h2><i class="fa-solid fa-address-card"></i> About me</h2>
                         <br>
@@ -176,7 +179,7 @@
                     <div class="section shadow-sm">
                         <h2><i class="fa-solid fa-screwdriver-wrench"></i> Skills</h2>
                         <br>
-                        <div id="skill-carousel" class="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-interval="8000">
+                        <div id="skill-carousel" class="carousel carousel-dark slide no-print" data-bs-ride="carousel" data-bs-interval="8000">
                             <div class="carousel-indicators" style="top: 100%">
                                 <button type="button" data-bs-target="#skill-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                                 <button type="button" data-bs-target="#skill-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -241,7 +244,7 @@
                                     <div class="row gx-5">
                                         <div class="col-md-6">
                                             <div class="text-center"><strong>Bash</strong><i class="black ms-2 fa-brands fa-ubuntu"></i></div>
-                                            <div class="skill-bar rank-3">
+                                            <div class="skill-bar rank-4">
                                                 <div class="skill"></div>
                                                 <div class="skill"></div>
                                                 <div class="skill"></div>
@@ -252,8 +255,8 @@
                                             <br>
                                         </div>
                                         <div class="col-md-6">
-                                            <div class="text-center"><strong>C++</strong></div>
-                                            <div class="skill-bar rank-1">
+                                            <div class="text-center"><strong>CSS</strong><i class="black ms-2 fa-brands fa-css3-alt"></i></div>
+                                            <div class="skill-bar rank-4">
                                                 <div class="skill"></div>
                                                 <div class="skill"></div>
                                                 <div class="skill"></div>
@@ -296,8 +299,8 @@
                                     </div>
                                     <div class="row gx-5">
                                         <div class="col-md-6">
-                                            <div class="text-center"><strong>Struts</strong></div>
-                                            <div class="skill-bar rank-3">
+                                            <div class="text-center"><strong>Node.js</strong><i class="black ms-2 fa-brands fa-node-js"></i></div>
+                                            <div class="skill-bar rank-5">
                                                 <div class="skill"></div>
                                                 <div class="skill"></div>
                                                 <div class="skill"></div>
@@ -308,7 +311,7 @@
                                             <br>
                                         </div>
                                         <div class="col-md-6">
-                                            <div class="text-center"><strong>JQuery</strong></div>
+                                            <div class="text-center"><strong>Kubernetes</strong><i class="black ms-2 fa-solid fa-dharmachakra"></i></div>
                                             <div class="skill-bar rank-3">
                                                 <div class="skill"></div>
                                                 <div class="skill"></div>
@@ -365,7 +368,7 @@
                                         </div>
                                         <div class="col-md-6">
                                             <div class="text-center"><strong>Eclipse</strong></div>
-                                            <div class="skill-bar rank-4">
+                                            <div class="skill-bar rank-3">
                                                 <div class="skill"></div>
                                                 <div class="skill"></div>
                                                 <div class="skill"></div>
@@ -379,7 +382,7 @@
                                     <div class="row gx-5">
                                         <div class="col-md-6">
                                             <div class="text-center"><strong>VSCode</strong><i class="black ms-2 fa-brands fa-windows"></i></div>
-                                            <div class="skill-bar rank-4">
+                                            <div class="skill-bar rank-5">
                                                 <div class="skill"></div>
                                                 <div class="skill"></div>
                                                 <div class="skill"></div>
@@ -391,7 +394,7 @@
                                         </div>
                                         <div class="col-md-6">
                                             <div class="text-center"><strong>Jira</strong><i class="black ms-2 fa-brands fa-jira"></i></div>
-                                            <div class="skill-bar rank-3">
+                                            <div class="skill-bar rank-4">
                                                 <div class="skill"></div>
                                                 <div class="skill"></div>
                                                 <div class="skill"></div>
@@ -427,6 +430,39 @@
                                 <span class="visually-hidden">Next</span>
                             </button>
                         </div>
+                        <div class="row print-only">
+                            <div class="col-md-4">
+                                <h3>Languages</h3>
+                                <ul>
+                                    <li>TypeScript / JavaScript</li>
+                                    <li>Java</li>
+                                    <li>SQL</li>
+                                    <li>Bash</li>
+                                    <li>CSS3</li>
+                                    <li>HTML</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <h3>Frameworks</h3>
+                                <ul>
+                                    <li>Angular</li>
+                                    <li>Node.js</li>
+                                    <li>Spring</li>
+                                    <li>Kubernetes</li>
+                                    <li>Apigee</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <h3>Tools</h3>
+                                <ul>
+                                    <li>Git</li>
+                                    <li>VSCode</li>
+                                    <li>GitHub</li>
+                                    <li>Eclipse</li>
+                                    <li>Jira</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div id="experience" class="anchor"></div>
@@ -436,10 +472,26 @@
                         <br>
                         <div class="experience">
                             <div class="work-history">
+                                <div class="job blue"><strong>Senior Consultant, Software Engineer</strong></div>
+                                <div class="d-flex">
+                                    <span>at <a href="https://nationwide.com" target="_blank">Nationwide</a></span>
+                                    <span class="ms-auto"><strong>Oct 2020 - Present</strong></span>
+                                </div>
+                                <br>
+                                <p>Senior Tech Lead in Claims Solutions Technology (P&C) overseeing 7 build lines, promoting best coding practices, modern design and architecture.</p>
+                                <ul>
+                                    <li>Organized, designed and implemented several department-wide technical currency initiatives across all build lines, including Java 17 upgrades, Spring Boot 3 migrations, and CI / CD overhauls.</li>
+                                    <li>Influenced executive and technical leadership on the direction of technical currency initiatives and modern, innovative solutions, including running experiments with Generative AI.</li>
+                                    <li>Coordinated and implemented vulnerability remediation efforts with several build lines across a diverse tech stack, including Spring Boot microservices and Guidewire applications.</li>
+                                    <li>Designed and integrated quality gates in the CI / CD flow to implement Binary Authorization through the implementation of Attestation mechanisms for security and quality control.</li>
+                                    <li>Designed a new process for maintaining the base docker image suite, including recurring rebuilds, automated vulnerability scanning and reporting, and automated deployment of new images.</li>
+                                    <li>Created a project plan for the department interns for a Feature Toggle App POC, which will be the basis for moving applications to trunk-based development.</li>
+                                    <li>Significantly overhauled and improved inner-team organization for the DevSecOps team, using Jira to help organize and manage work intake and improve overall project planning.</li>
+                                </ul>
                                 <div class="job blue"><strong>Consultant, Software Engineer</strong></div>
                                 <div class="d-flex">
                                     <span>at <a href="https://nationwide.com" target="_blank">Nationwide</a></span>
-                                    <span class="ms-auto"><strong>Aug 2020 - Present</strong></span>
+                                    <span class="ms-auto"><strong>Aug 2020 - Oct 2022</strong></span>
                                 </div>
                                 <br>
                                 <p>Tech Lead for the Pre-Sale and New Business product within Nationwide Financial Digital, leading full stack project design, architecture, and implementation on several Agile / DevOps build lines and providing consulting expertise throughout the NF Digital department.</p>
@@ -458,7 +510,7 @@
                                     <span class="ms-auto"><strong>Mar 2018 - Aug 2020</strong></span>
                                 </div>
                                 <br>
-                                <p>Tech Lead for an Agile build capability team. Managing full stack project design, coordinating architecture and business requirements, and leading implementation on projects within the development line.</p>
+                                <p>Tech Lead for an Agile build capability team. Managing full stack project design, coordinating architecture and business requirements, and leading implementation on projects.</p>
                                 <ul>
                                     <li>Selected to lead the technical design and implementation of multiple full stack tier 1 projects, including an innovative insurance product providing customers the ability to complete life policy applications online, a first in the industry, using Apigee for the API gateway, OAuth 2.0 for authentication, Spring (Java) for the REST backend, and Angular for the web application.</li>
                                     <li>Upgraded front-end build systems from Gulp and Browserify to Webpack, which decreased the average local recompile time from 4+ minutes to under 10 seconds, delivering substantial gains in productivity.</li>
@@ -471,13 +523,12 @@
                                     <span class="ms-auto"><strong>Aug 2016 - Mar 2028</strong></span>
                                 </div>
                                 <br>
-                                <p>Full stack application development in an Agile environment, including but not limited to paired programming, story-driven modeling/development/testing, and incremental/iterative development.</p>
-                                <ul>
+                                <p>Full stack application development in an Agile environment with paired programming, story-driven SDLC, and iterative development.</p>
+                                <ul class="no-print">
                                     <li>Delivered multiple tier-1 business software applications and projects that manage over $110B assets of both private and public sector retirement plans, covering over 2 million participants.</li>
                                     <li>Front-end development for both internal and customer-facing applications using AngularJS, HTML5, JavaScript (ES6) and SCSS/CSS3.</li>
                                     <li>Designed and developed Java EE web services (REST) for back-end data delivery and business logic implementation, using Apigee proxies and IBM WebSphere and Spring server configurations.</li>
                                     <li>Delivered multiple continuous improvement enhancements to the team, overhauling our Agile practices by introducing relative sizing for estimation and increasing involvement of business/architects during iteration zero.</li>
-                                    <li>Developed, updated and maintained PL/SQL packages and stored procedures, Pro*C and Shell scripts.</li>
                                 </ul>
                                 <div class="job blue"><strong>Software Developer</strong></div>
                                 <div class="d-flex">
@@ -497,36 +548,17 @@
                                     <span class="ms-auto"><strong>May 2013 - Mar 2014</strong></span>
                                 </div>
                                 <br>
-                                <p>Software development through creation and modification of web applications using Java EE, Hibernate, SQL, JavaScript and HTML.</p>
-                                <ul>
-                                    <li>Maintained and extended existing source code through the creation of new classes and interfaces.</li>
-                                    <li>Created, modified and updated application source code documentation with JavaDoc</li>
-                                    <li>Developed, maintained and executed test cases and scripts for unit testing.</li>
-                                    <li>Replaced obsolete software implementations with equivalent modern, industry standard implementations (e.g. replacing PCML usage with Stored Procedures and Hibernate/SQL statements)</li>
-                                    <li>Created demonstrations and templates for future project implementations (e.g. development and design of a mobile responsive website with HTML5, CSS3 and JavaScript ES6)</li>
-                                    <li>Trained interns in skills and techniques relating to object-oriented design, java libraries and best coding practices.</li>
-                                </ul>
-                                <div class="job accent"><strong>IT Systems Analyst Intern</strong></div>
+                                <div class="job red"><strong>IT Systems Analyst Intern</strong></div>
                                 <div class="d-flex">
                                     <span>at <a href="https://columbuszoo.org/" target="_blank">Columbus Zoo</a></span>
                                     <span class="ms-auto"><strong>Jan 2012 - Nov 2012</strong></span>
                                 </div>
-                                <br>
-                                <p>Installed, maintained, configured, upgraded and administered hardware and software independently across multiple technology domains and provided run support.</p>
-                                <ul>
-                                    <li>Diagnosed, analyzed and resolved issues for customers across multiple domains.</li>
-                                    <li>Created a supplementary internal IT Support website for software and driver installation instructions and downloads, using HTML, JavaScript and CSS.</li>
-                                    <li>Developed and maintained scripts (batch, visual basic) to automate installation and deployment processes.</li>
-                                    <li>Led the IT team in deploying, configuring and troubleshooting Windows PC tablets for use as mobile point-of-sale stations.</li>
-                                    <li>Created over 10 new documentation articles on software/hardware installation, and indexed and maintained the entirety of the Columbus Zoo's documentation library.</li>
-                                    <li>Conducted performance tuning for hardware and software.</li>
-                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div id="contact" class="anchor"></div>
-                <div class="row mb-4">
+                <div class="row mb-4 no-print">
                     <div class="section shadow-sm">
                         <h2><i class="fa-solid fa-envelope"></i> Contact</h2>
                         <br>
