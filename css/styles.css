@@ -329,6 +329,10 @@ body[data-scroll-position='contact'] * .menu > .menu-item[data-menu='contact'] {
     background-color: var(--grey);
 }
 
+.job {
+    white-space: nowrap;
+}
+
 .work-history>.job:before {
     display: block;
     position: absolute;
