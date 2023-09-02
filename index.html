@@ -49,7 +49,7 @@
                 <!-- Sidebar-->
                 <div id="sidebar" class="section shadow-sm sticky-top">
                     <div class="text-center portrait">
-                        <a href="#home"><img class="img-fluid profile" src="media/profile.jpg" alt="Profile picture" width="200" height="200"></a>
+                        <a href="https://sashaarrabi.com/#home"><img class="img-fluid profile" src="media/profile.jpg" alt="Profile picture" width="200" height="200"></a>
                     </div>
                     <br>
                     <div>
@@ -61,15 +61,18 @@
                             <div><i class="fa-solid fa-location-dot black"></i> Columbus, OH, USA</div>
                             <div><i class="fa-solid fa-globe green"></i> English, Russian, French</div>
                         </div>
-                        <hr>
+                        <hr class="no-print">
+                        <br class="print-only-block">
                         <div id="summary">
-                            <p><strong class="accent">Professional summary</strong></p>
-                            <p>I am a senior full stack software engineering consultant working primarily with Node.js, Angular, and Java microservices.</p>
+                            <h2 class="print-only-block"><i class="fa-solid fa-address-card"></i> Professional summary</h2>
+                            <br class="print-only-block">
+                            <p class="no-print"><strong class="accent">Professional summary</strong></p>
+                            <p>I am a senior full stack software engineering consultant with over 10 years of exprience, working primarily with Angular, Java, and Node.js.</p>
                         </div>
                         <div>
-                            <p><strong class="accent">Current occupation</strong></p>
-                            <p><span class="accent">Senior Tech Lead</span> for the Claims Shared Services organization within Nationwide Property & Casualty (P&C).</p>
-                            <p>My role operates on both a <span class="accent">tactical</span> and <span class="accent">strategic level</span> to coordinate overall department technical solutions, resiliency, and direction.</p>
+                            <p class="no-print"><strong class="accent">Current occupation</strong></p>
+                            <p><span class="accent">Senior Tech Lead</span> for the Claims Shared Services organization within Nationwide P&C.</p>
+                            <p>My current role operates on both a <span class="accent">tactical</span> and <span class="accent">strategic level</span> to coordinate overall department technical solutions, resiliency, and direction.</p>
                         </div>
                         <br class="no-print">
                         <div id="social-media" class="social-media no-print">
@@ -78,9 +81,9 @@
                             <a href="https://blog.sashaarrabi.com" target="_blank" title="Blog"><i class="fa-solid fa-square-rss" style="color: #f26522"></i></a>
                             <a href="#contact"><i class="fa-solid fa-at purple" title="Contact form"></i></a>
                         </div>
-                        <br class="no-print">
-                        <br class="no-print">
-                        <div class="text-center no-print">
+                        <div class="text-center no-print d-none d-sm-none d-md-none d-lg-block">
+                            <br>
+                            <br>
                             <button class="btn btn-primary accent-bg" onclick="window.print()"><i class="fa-solid fa-print white"></i>Print Resume</button>
                         </div>
                     </div>
@@ -434,7 +437,7 @@
                                 <span class="visually-hidden">Next</span>
                             </button>
                         </div>
-                        <div class="row print-only">
+                        <div class="row print-only-flex">
                             <div class="col-md-4">
                                 <h3>Languages</h3>
                                 <ul>
@@ -470,102 +473,128 @@
                     </div>
                 </div>
                 <div id="experience" class="anchor"></div>
-                <div class="row mb-4 pagebreak">
+                <div class="row mb-4">
                     <div class="section shadow-sm">
                         <h2><i class="fa-solid fa-briefcase"></i> Experience</h2>
                         <br>
                         <div class="experience">
                             <div class="work-history">
-                                <div class="job blue"><strong>Sr. Consultant, Software Engineer</strong></div>
-                                <div class="d-flex">
-                                    <span>at <a href="https://nationwide.com" target="_blank">Nationwide</a></span>
-                                    <span class="ms-auto"><strong>Oct 2022 - Present</strong></span>
+                                <div>
+                                    <div class="job blue"><strong>Sr. Consultant, Software Engineer</strong></div>
+                                    <div class="d-flex">
+                                        <span>at <a href="https://nationwide.com" target="_blank">Nationwide</a></span>
+                                        <span class="ms-auto"><strong>Oct 2022 - Present</strong></span>
+                                    </div>
+                                    <br>
+                                    <p>Senior Tech Lead in Claims Shared Services (P&C) overseeing 7 build lines, promoting best coding practices, modern design and architecture.</p>
+                                    <ul>
+                                        <li>Organized, designed, and implemented several department-wide technical currency initiatives, including Java 17 upgrades, Spring Boot 3 migrations, and CI / CD overhauls.</li>
+                                        <li>Influenced executive and people leadership on technical currency initiatives and innovative solutions, including experiments with Generative AI.</li>
+                                        <li>Coordinated department-wide vulnerability remediation efforts across a diverse tech stack, including Spring Boot and Guidewire applications.</li>
+                                        <li>Designed and integrated quality gates in the CI / CD flow to implement Binary Authorization through the implementation of Attestation mechanisms for security and quality control.</li>
+                                        <li>Designed a new process for maintaining the base docker image suite, including recurring rebuilds, automated vulnerability scanning and reporting, and automated deployment of new images.</li>
+                                        <li>Significantly overhauled and improved inner-team organization for the DevSecOps team, using Jira to help organize and manage work intake and improve overall project planning.</li>
+                                    </ul>
+                                </div>
+                                <div class="pagebreak"></div>
+                                <br>
+                                <div>
+                                    <div class="job green"><strong>Consultant, Software Engineer</strong></div>
+                                    <div class="d-flex">
+                                        <span>at <a href="https://nationwide.com" target="_blank">Nationwide</a></span>
+                                        <span class="ms-auto"><strong>Aug 2020 - Oct 2022</strong></span>
+                                    </div>
+                                    <br>
+                                    <p>Tech Lead within Nationwide Financial Digital, leading full stack project design, architecture, and implementation on several DevSecOps lines and providing consulting expertise throughout the department.</p>
+                                    <ul>
+                                        <li>Pioneering independent deployment of individual application features by redesigning monolithic web apps into modern web (SPA / microfrontend) architecture.</li>
+                                        <li>Increased customer engagement and conversion by substantially improving the startup and runtime performance of the nationwidefinancial.com flagship web app, reducing average load time by 90% (from 15.4 seconds to 1.5 seconds) and bundle file size by 88%.</li>
+                                        <li>Modernized and strengthened the enterprise tech stack by leading, designing, and completing the redesign of a large enterprise web app from the AngularJS framework to the latest version of Angular.</li>
+                                        <li>Exhibited thorough practice and understanding of modern web architecture through designing and implementing microservice REST APIs performing complex, cross-domain orchestration across multiple technology domains including Spring Boot, Node.js, Apigee, and Kubernetes.</li>
+                                        <li>Increased frequency of production deployments and reduced overall risk by designing and implementing a CI pipeline that reduced average application build time from 12 minutes to 5 minutes and significantly reduced mean time to recovery (MTTR) from 20 minutes to 2 minutes.</li>
+                                        <li>Enhanced enterprise security by proactively finding and fixing OWASP security vulnerabilities and migrating to an OAuth 2.0 authentication system for a public-facing flagship web app.</li>
+                                        <li>Lead enterprise-wide training courses and created training material for functional style coding and Jasmine and Jest unit testing.</li>
+                                    </ul>
                                 </div>
                                 <br>
-                                <p>Senior Tech Lead in Claims Shared Services (P&C) overseeing 7 build lines, promoting best coding practices, modern design and architecture.</p>
-                                <ul>
-                                    <li>Organized, designed and implemented several department-wide technical currency initiatives across all build lines, including Java 17 upgrades, Spring Boot 3 migrations, and CI / CD overhauls.</li>
-                                    <li>Influenced executive and technical leadership on the direction of technical currency initiatives and modern, innovative solutions, including running experiments with Generative AI.</li>
-                                    <li>Coordinated and implemented vulnerability remediation efforts with several build lines across a diverse tech stack, including Spring Boot microservices and Guidewire applications.</li>
-                                    <li>Designed and integrated quality gates in the CI / CD flow to implement Binary Authorization through the implementation of Attestation mechanisms for security and quality control.</li>
-                                    <li>Designed a new process for maintaining the base docker image suite, including recurring rebuilds, automated vulnerability scanning and reporting, and automated deployment of new images.</li>
-                                    <li>Created a project plan for the department interns for a Feature Toggle App POC, which will be the basis for moving applications to trunk-based development.</li>
-                                    <li>Significantly overhauled and improved inner-team organization for the DevSecOps team, using Jira to help organize and manage work intake and improve overall project planning.</li>
-                                </ul>
-                                <br>
-                                <div class="job green"><strong>Consultant, Software Engineer</strong></div>
-                                <div class="d-flex">
-                                    <span>at <a href="https://nationwide.com" target="_blank">Nationwide</a></span>
-                                    <span class="ms-auto"><strong>Aug 2020 - Oct 2022</strong></span>
+                                <div>
+                                    <div class="job purple"><strong>Specialist, IT App Development</strong></div>
+                                    <div class="d-flex">
+                                        <span>at <a href="https://nationwide.com" target="_blank">Nationwide</a></span>
+                                        <span class="ms-auto"><strong>Mar 2018 - Aug 2020</strong></span>
+                                    </div>
+                                    <br>
+                                    <p>Tech Lead for an Agile build line, managing full stack project design, coordinating architecture and business requirements, and leading implementation on projects.</p>
+                                    <ul class="no-print">
+                                        <li>Selected to lead the technical design and implementation of multiple full stack tier 1 projects, including an innovative insurance product providing customers the ability to complete life policy applications online, a first in the industry, using Apigee for the API gateway, OAuth 2.0 for authentication, Spring (Java) for the REST backend, and Angular for the web application.</li>
+                                        <li>Upgraded front-end build systems from Gulp and Browserify to Webpack, which decreased the average local recompile time from 4+ minutes to under 10 seconds, delivering substantial gains in productivity.</li>
+                                        <li>Transitioning enterprise AngularJS 1.6 applications to Angular 7 by incorporating TypeScript, updating build systems to use Webpack, replacing scope usage with services, converting directives to components, and dividing large, monolithic code blocks into smaller modules, improving the longevity and scalability of the applications and keeping them maintainable.</li>
+                                        <li>Created Jenkins and Concourse pipelines for continuous deployment, source code artifacting, automated gateway checks with static code analysis tools (SonarQube, code coverage), and automation testing.</li>
+                                    </ul>
                                 </div>
                                 <br>
-                                <p>Tech Lead for the Pre-Sale and New Business product within Nationwide Financial Digital, leading full stack project design, architecture, and implementation on several Agile / DevOps build lines and providing consulting expertise throughout the NF Digital department.</p>
-                                <ul>
-                                    <li>Pioneering independent deployment of individual application features by leading the Break the Monolith effort to redesign enterprise-sized monolithic web apps into a modern web (SPA / microfrontend) architecture.</li>
-                                    <li>Increased customer engagement and conversion by substantially improving the startup and runtime performance of the nationwidefinancial.com flagship web app, reducing average load time by 90% (from 15.4 seconds to 1.5 seconds) and bundle file size by 88%.</li>
-                                    <li>Modernized and strengthened the enterprise tech stack by leading, designing, and completing the migration and redesign of a large enterprise web app comprising over 300K lines of code from using the AngularJS framework to using the latest version of Angular.</li>
-                                    <li>Demonstrated thorough practice and understanding of modern web architecture through designing and implementing microservice REST APIs performing complex, cross-domain orchestration across multiple technology domains including Spring Boot, Node.js, Apigee, and Kubernetes.</li>
-                                    <li>Increased frequency of production deployments and reduced overall risk by designing and implementing a Concourse CI pipeline that reduced average application build time from 12 minutes to 5 minutes and significantly reduced mean time to recovery (MTTR) from 20 minutes to 2 minutes.</li>
-                                    <li>Enhanced enterprise security by proactively finding and fixing OWASP security vulnerabilities and designing and implementing the migration of the OAuth 2.0 authentication system for a public-facing flagship web app, ensuring that all OpenID Connect specs were strictly followed.</li>
-                                    <li>Lead enterprise-wide training courses and created training material for functional style coding and Jasmine and Jest unit testing.</li>
-                                </ul>
-                                <br>
-                                <div class="job purple"><strong>Specialist, IT App Development</strong></div>
-                                <div class="d-flex">
-                                    <span>at <a href="https://nationwide.com" target="_blank">Nationwide</a></span>
-                                    <span class="ms-auto"><strong>Mar 2018 - Aug 2020</strong></span>
+                                <div class="print-only-block">
+                                    <div class="job red"><strong>Software Developer</strong></div>
+                                    <div class="d-flex">
+                                        <span>at <a href="https://nationwide.com" target="_blank">Nationwide</a></span>
+                                        <span class="ms-auto"><strong>Nov 2014 - Mar 2018</strong></span>
+                                    </div>
+                                    <br>
+                                    <p>Full stack application development in an Agile environment with paired programming, story-driven SDLC, and iterative development.</p>
+                                </div>
+                                <br class="print-only-block">
+                                <div class="no-print">
+                                    <div class="job red"><strong>Sr. Developer, IT Applications</strong></div>
+                                    <div class="d-flex">
+                                        <span>at <a href="https://nationwide.com" target="_blank">Nationwide</a></span>
+                                        <span class="ms-auto"><strong>Aug 2016 - Mar 2018</strong></span>
+                                    </div>
+                                    <br>
+                                    <p>Full stack application development in an Agile environment with paired programming, story-driven SDLC, and iterative development.</p>
+                                    <ul>
+                                        <li>Delivered multiple tier-1 business software applications and projects that manage over $110B assets of both private and public sector retirement plans, covering over 2 million participants.</li>
+                                        <li>Front-end development for both internal and customer-facing applications using AngularJS, HTML5, JavaScript (ES6) and SCSS/CSS3.</li>
+                                        <li>Designed and developed Java EE web services (REST) for back-end data delivery and business logic implementation, using Apigee proxies and IBM WebSphere and Spring server configurations.</li>
+                                        <li>Delivered multiple continuous improvement enhancements to the team, overhauling our Agile practices by introducing relative sizing for estimation and increasing involvement of business/architects during iteration zero.</li>
+                                    </ul>
+                                </div>
+                                <br class="no-print">
+                                <div class="no-print">
+                                    <div class="job blue"><strong>Software Developer</strong></div>
+                                    <div class="d-flex">
+                                        <span>at <a href="https://nationwide.com" target="_blank">Nationwide</a></span>
+                                        <span class="ms-auto"><strong>Nov 2014 - Aug 2016</strong></span>
+                                    </div>
+                                    <br>
+                                </div>
+                                <br class="no-print">
+                                <div class="no-print">
+                                    <div class="job green"><strong>Software Developer</strong></div>
+                                    <div class="d-flex">
+                                        <span>at <a href="https://www.kforce.com/" target="_blank">KForce Inc</a></span>
+                                        <span class="ms-auto"><strong>Mar 2014 - Nov 2014</strong></span>
+                                    </div>
+                                    <br>
+                                    <p class="no-print">Contracted to Nationwide</p>
+                                </div>
+                                <br class="no-print">
+                                <div>
+                                    <div class="job blue"><strong>Software Developer Intern</strong></div>
+                                    <div class="d-flex">
+                                        <span>at <a href="https://www.ic.ohio.gov/" target="_blank">Ohio Industrial Commission</a></span>
+                                        <span class="ms-auto"><strong>May 2013 - Mar 2014</strong></span>
+                                    </div>
+                                    <br>
                                 </div>
                                 <br>
-                                <p>Tech Lead for an Agile build capability team. Managing full stack project design, coordinating architecture and business requirements, and leading implementation on projects.</p>
-                                <ul>
-                                    <li>Selected to lead the technical design and implementation of multiple full stack tier 1 projects, including an innovative insurance product providing customers the ability to complete life policy applications online, a first in the industry, using Apigee for the API gateway, OAuth 2.0 for authentication, Spring (Java) for the REST backend, and Angular for the web application.</li>
-                                    <li>Upgraded front-end build systems from Gulp and Browserify to Webpack, which decreased the average local recompile time from 4+ minutes to under 10 seconds, delivering substantial gains in productivity.</li>
-                                    <li>Transitioning enterprise AngularJS 1.6 applications to Angular 7 by incorporating TypeScript, updating build systems to use Webpack, replacing scope usage with services, converting directives to components, and dividing large, monolithic code blocks into smaller modules, improving the longevity and scalability of the applications and keeping them maintainable.</li>
-                                    <li>Created Jenkins and Concourse pipelines for continuous deployment, source code artifacting, automated gateway checks with static code analysis tools (SonarQube, code coverage), and automation testing.</li>
-                                </ul>
-                                <br>
-                                <div class="job red"><strong>Sr. Developer, IT Applications</strong></div>
-                                <div class="d-flex">
-                                    <span>at <a href="https://nationwide.com" target="_blank">Nationwide</a></span>
-                                    <span class="ms-auto"><strong>Aug 2016 - Mar 2028</strong></span>
+                                <div>
+                                    <div class="job green"><strong>IT Systems Analyst Intern</strong></div>
+                                    <div class="d-flex">
+                                        <span>at <a href="https://columbuszoo.org/" target="_blank">Columbus Zoo</a></span>
+                                        <span class="ms-auto"><strong>Jan 2012 - Nov 2012</strong></span>
+                                    </div>
+                                    <br class="no-print">
                                 </div>
-                                <br>
-                                <p>Full stack application development in an Agile environment with paired programming, story-driven SDLC, and iterative development.</p>
-                                <ul class="no-print">
-                                    <li>Delivered multiple tier-1 business software applications and projects that manage over $110B assets of both private and public sector retirement plans, covering over 2 million participants.</li>
-                                    <li>Front-end development for both internal and customer-facing applications using AngularJS, HTML5, JavaScript (ES6) and SCSS/CSS3.</li>
-                                    <li>Designed and developed Java EE web services (REST) for back-end data delivery and business logic implementation, using Apigee proxies and IBM WebSphere and Spring server configurations.</li>
-                                    <li>Delivered multiple continuous improvement enhancements to the team, overhauling our Agile practices by introducing relative sizing for estimation and increasing involvement of business/architects during iteration zero.</li>
-                                </ul>
-                                <br>
-                                <div class="job blue"><strong>Software Developer</strong></div>
-                                <div class="d-flex">
-                                    <span>at <a href="https://nationwide.com" target="_blank">Nationwide</a></span>
-                                    <span class="ms-auto"><strong>Nov 2014 - Aug 2016</strong></span>
-                                </div>
-                                <br>
-                                <br>
-                                <div class="job green"><strong>Software Developer</strong></div>
-                                <div class="d-flex">
-                                    <span>at <a href="https://www.kforce.com/" target="_blank">KForce Inc</a></span>
-                                    <span class="ms-auto"><strong>Mar 2014 - Nov 2014</strong></span>
-                                </div>
-                                <br>
-                                <p>Contracted to Nationwide</p>
-                                <br>
-                                <div class="job purple"><strong>Software Developer Intern</strong></div>
-                                <div class="d-flex">
-                                    <span>at <a href="https://www.ic.ohio.gov/" target="_blank">Ohio Industrial Commission</a></span>
-                                    <span class="ms-auto"><strong>May 2013 - Mar 2014</strong></span>
-                                </div>
-                                <br>
-                                <br>
-                                <div class="job red"><strong>IT Systems Analyst Intern</strong></div>
-                                <div class="d-flex">
-                                    <span>at <a href="https://columbuszoo.org/" target="_blank">Columbus Zoo</a></span>
-                                    <span class="ms-auto"><strong>Jan 2012 - Nov 2012</strong></span>
-                                </div>
-                                <br>
                             </div>
                         </div>
                     </div>

@@ -337,7 +337,7 @@ body[data-scroll-position='contact'] * .menu > .menu-item[data-menu='contact'] {
     white-space: nowrap;
 }
 
-.work-history>.job:before {
+.work-history>*>.job:before {
     display: block;
     position: absolute;
     content: " ";
@@ -350,27 +350,27 @@ body[data-scroll-position='contact'] * .menu > .menu-item[data-menu='contact'] {
     background-color: #FFF;
 }
 
-.work-history>.job.blue:before {
+.work-history>*>.job.blue:before {
     border-color: var(--blue);
 }
 
-.work-history>.job.accent:before {
+.work-history>*>.job.accent:before {
     border-color: var(--accent);
 }
 
-.work-history>.job.purple:before {
+.work-history>*>.job.purple:before {
     border-color: var(--purple);
 }
 
-.work-history>.job.green:before {
+.work-history>*>.job.green:before {
     border-color: var(--green);
 }
 
-.work-history>.job.red:before {
+.work-history>*>.job.red:before {
     border-color: var(--red);
 }
 
-.work-history>.job:after {
+.work-history>*>.job:after {
     display: block;
     position: absolute;
     content: " ";
@@ -382,23 +382,23 @@ body[data-scroll-position='contact'] * .menu > .menu-item[data-menu='contact'] {
     background-color: var(--green);
 }
 
-.work-history>.job.blue:after {
+.work-history>*>.job.blue:after {
     background-color: var(--blue);
 }
 
-.work-history>.job.accent:after {
+.work-history>*>.job.accent:after {
     background-color: var(--accent);
 }
 
-.work-history>.job.purple:after {
+.work-history>*>.job.purple:after {
     background-color: var(--purple);
 }
 
-.work-history>.job.green:after {
+.work-history>*>.job.green:after {
     background-color: var(--green);
 }
 
-.work-history>.job.red:after {
+.work-history>*>.job.red:after {
     background-color: var(--red);
 }
 
@@ -447,24 +447,41 @@ body[data-scroll-position='contact'] * .menu > .menu-item[data-menu='contact'] {
 }
 
 /* Hide content that is only meant for the print-view */
-.print-only {
+.print-only-flex {
+    display: none;
+}
+
+.print-only-block {
     display: none;
 }
 
 /* Create styling for print media - traditional resume view */
 @media print {
     body {
+        font-size: 13px;
         background-color: #FFF;
         -webkit-print-color-adjust: exact !important;
         print-color-adjust: exact !important;
     }
 
-    .print-only {
+    h2 {
+        font-size: 16px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    .print-only-flex {
         display: flex;
     }
 
+    .print-only-block {
+        display: block;
+    }
+
     .no-print {
-        display: none;
+        display: none !important;
     }
 
     .pagebreak {
@@ -485,19 +502,15 @@ body[data-scroll-position='contact'] * .menu > .menu-item[data-menu='contact'] {
     }
 
     .section {
-        padding: 25px 25px 0px 25px;
+        padding: 5px 25px 0px 25px;
     }
 
     .shadow-sm {
         box-shadow: none !important;
     }
 
-    h2 {
-        font-size: 22px;
-    }
-
-    h3 {
-        font-size: 18px;
+    .portrait {
+        display: none;
     }
 
     .experience {
@@ -508,5 +521,18 @@ body[data-scroll-position='contact'] * .menu > .menu-item[data-menu='contact'] {
     .experience * a {
         text-decoration: none;
         color: initial;
+    }
+
+    .work-history>*>.job:before {
+        height: 22px;
+        width: 22px;
+        margin-left: -40px;
+    }
+
+    .work-history>*>.job:after {
+        height: 10px;
+        width: 10px;
+        margin-left: -34px;
+        margin-top: -16.5px;
     }
 }
