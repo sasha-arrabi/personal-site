@@ -535,4 +535,16 @@ body[data-scroll-position='contact'] * .menu > .menu-item[data-menu='contact'] {
         margin-left: -34px;
         margin-top: -16.5px;
     }
+
+    .qr-code {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        z-index: 9999;
+    }
+
+    .qr-code>img {
+        width: 75px;
+        height: 75px;
+    }
 }
