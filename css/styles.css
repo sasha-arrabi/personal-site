@@ -480,6 +480,10 @@ body[data-scroll-position='contact'] * .menu > .menu-item[data-menu='contact'] {
         display: block;
     }
 
+    .print-bold {
+        font-weight: bold;
+    }
+
     .no-print {
         display: none !important;
     }
